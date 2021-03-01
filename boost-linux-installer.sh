@@ -29,3 +29,4 @@ cd boost_${version//./_}_$build/
 ./bootstrap.sh --with-libraries=all
 ./b2
 ./b2 install
+ldconfig

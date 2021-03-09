@@ -24,7 +24,7 @@ cd boost_${version//./_}_$build/
 
 # install essntail libs
 # sudo apt-get update
-# sudo apt-get install build-essential g++ python-dev autotools-dev libicu-dev build-essential libbz2-dev libboost-all-dev
+# sudo apt-get install -y build-essential g++ python-dev autotools-dev libicu-dev libbz2-dev
 
 ./bootstrap.sh --with-libraries=all
 ./b2

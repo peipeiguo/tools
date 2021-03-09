@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-version=1.75
+version=1.70
 build=0
 
 # 参考：https://blog.csdn.net/this_capslock/article/details/47170313
@@ -23,8 +23,8 @@ tar -xzvf $file
 cd boost_${version//./_}_$build/
 
 # install essntail libs
-# apt-get update
-# apt-get install build-essential g++ python-dev autotools-dev libicu-dev build-essential libbz2-dev libboost-all-dev
+# sudo apt-get update
+# sudo apt-get install build-essential g++ python-dev autotools-dev libicu-dev build-essential libbz2-dev libboost-all-dev
 
 ./bootstrap.sh --with-libraries=all
 ./b2
